@@ -56,13 +56,13 @@ public class DriverFactory {
 			tlDriver.set(new EdgeDriver(optionsManager.getEdgeOptions()));
 		}
 		else {
-			System.out.println("Please pass the right browser..."+ browserName);
+			System.out.println("Please pass the right browser name..."+ browserName);
 			throw new FrameworkException("No Browser found exception");
 		}
 		
 		getDriver().manage().deleteAllCookies();
 		getDriver().manage().window().maximize();
-		getDriver().get(prop.getProperty("url"));
+		getDriver().get(prop.getProperty("url").trim());
 		return getDriver();
 		
 	}
