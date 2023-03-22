@@ -7,4 +7,9 @@ public class OrderPage {
 	public void getOrder() {
 		System.out.println("get order");
 	}
+	
+	By price = By.id("price");
+	public void getPrice() {
+		System.out.println("get price");
+	}
 }
