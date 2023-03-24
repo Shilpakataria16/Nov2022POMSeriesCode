@@ -8,7 +8,7 @@ public class Mail {
 	}
 	
 	public void getMail() {
-		System.out.println("get mail --Shilpa");
+		System.out.println("Get mail --Shilpa");
 	}
 
 }
